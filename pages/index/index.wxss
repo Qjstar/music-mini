@@ -1,0 +1,134 @@
+/**index.wxss**/
+
+
+/* 搜索 */
+.search-bar {
+  width: 94%;
+  margin: 0 auto;
+  height: 30px;
+  background-color: #f5f5f5;
+  padding: 5px 0;
+}
+.search {
+  background-color: #e7e7e7;
+  font-size: 28rpx;
+  height: 30px;
+  line-height: 30px;
+  color: #5c5c5c;
+  text-align: center;
+  border-radius: 30px;
+}
+.icon-sousuo {
+  font-size: 36rpx;
+}
+/* 页面轮播图 */
+
+.banner{
+    width: 94%;
+    margin: 10rpx auto;
+    background: #b5b66b;
+}
+swiper image{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.recommend {
+  display: flex;
+  padding: 20rpx 10rpx 30rpx;
+  border-bottom: 2rpx solid #e7e7e7;
+}
+.recommendList {
+  width: 300rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recommendList .icon {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #fff3f3;
+  box-shadow: inset 0 0 30rpx #ffe2e2;
+  border-radius: 50%;
+  color:#ff4f4f;
+  text-align: center;
+  font-size: 48rpx;
+  font-weight: 500;
+  line-height: 100rpx;
+}
+.recommendList .text {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #8a8a8a;
+}
+/* 热门歌手 */
+.singer{
+  width: 94%;
+  margin: 10rpx auto;
+}
+.title{
+  display: block;
+  font-weight: 700;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.title::before{
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 30rpx;
+  background: #aa1212;
+  margin-right: 15rpx;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.singer .hotlist{
+height: 250rpx;
+display: flex;
+overflow: auto;
+align-items: center;
+}
+.singer .hotlist .item{
+width: 200rpx;
+margin-right: 20rpx;
+text-align: center;
+}
+.singer .hotlist .item image{
+width: 200rpx;
+height: 200rpx;
+border-radius: 10rpx;
+}
+.singer .hotlist .item text{
+font-size: 28rpx;
+color: #4d4d4d;
+}
+/* 热门音乐 */
+.popularMusic{
+    width: 94%;
+    margin: 10rpx auto;
+}
+.popularMusic .hotlist{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.popularMusic .hotlist .item{
+  display: block;
+  width: 30%;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+.popularMusic .hotlist .item image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+  border: 1px solid #666;
+}
+.popularMusic .hotlist .item text{
+  font-size: 28rpx;
+  color: #4d4d4d;
+}

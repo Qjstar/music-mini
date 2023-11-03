@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view id="music">
+  <!-- 搜索 -->
+  <view class="search-bar" catchtap="search">
+    <view class="search">
+      <text class="iconfont icon-sousuo"></text>
+      搜索</view>
+  </view>
+  <!-- 轮播图 -->
+  <view class="banner">
+    <swiper indicator-dots="true" indicator-color="rgba(255,255,255,.3)" indicator-active-color="#ff4f4f" autoplay="true" interval="2000" duration="1000" circular="true">
+      <block wx:for="{{banner}}" wx:key="this">
+        <swiper-item>
+          <image src="{{item.slide_img}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 歌曲分类 -->
+  <view class="recommend">
+    <block wx:for="{{recommendList}}" wx:key="this" >
+      <view data-type="{{item.type}}" class="recommendList" bindtap="openNew">
+        <view class="icon iconfont {{item.icon}}"></view>
+        <view class="text">{{item.text}}</view>
+      </view>
+    </block>
+  </view>
+   <!-- 热门歌手 -->
+   <view class="singer">
+      <text class="title">热门歌手</text>
+      <view class="hotlist">
+          <block wx:for="{{hotSinger}}" wx:key="this" wx:for-index="in">
+            <view class="item" data-index="{{in}}" bindtap="hotSingerLink">
+              <image src="{{item.singer_photo}}"></image>
+              <text>{{item.singer_name}}</text>
+            </view>
+          </block>
+      </view>
+    </view>
+  <!-- 热门音乐推荐 -->
+  <view class="popularMusic">
+    <text class="title">热门音乐</text>
+    <view class="hotlist">
+      <block wx:for="{{hotMusic}}" wx:key="this" wx:for-index="in">
+        <view class="item" data-index="{{in}}" bindtap="playLink">
+          <image src="{{item.song_img}}"></image>
+          <text>{{item.song_name}}</text>
+        </view>
+      </block>
+        
+    </view>
+    
+  </view>
+</view>

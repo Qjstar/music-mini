@@ -1,0 +1,23 @@
+<!--pages/music/music.wxml-->
+<view>
+    <view class="title">
+        <text>音乐列表</text>
+    </view>
+ 
+    <view class="musicbox">
+        <block wx:for="{{musicList}}" wx:key="this" wx:for-index="in">
+            <view class="item" data-index="{{in}}" bindtap="playLink">
+                <view class="item-imgText">
+                    <image src="{{item.song_img}}"></image>
+                        <view class="txtbox">
+                            <text class="musicName">{{item.song_name}}</text>
+                            <text class="name">{{item.song_singer}}</text>
+                        </view>
+                </view>
+                
+                <text class="iconfont icon-bofang2 playing"></text>
+            </view>
+        </block>
+      
+    </view>
+</view>

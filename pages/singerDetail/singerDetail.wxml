@@ -1,0 +1,14 @@
+<!--pages/singerDetail/singerDetail.wxml-->
+<view>
+    <view class="imgShow">
+        <image src="{{singerdetail.singer_photo}}" alt=""></image>
+        <view class="txtbox">
+            <view class="name">{{singerdetail.singer_name}}</view>
+            <view class="txt">网易云热门歌手-{{singerdetail.singer_type}}</view>
+        </view>
+    </view>
+    <view class="title">歌手简介</view>
+    <view class="content">
+        {{singerdetail.singer_details}}
+    </view>
+</view>

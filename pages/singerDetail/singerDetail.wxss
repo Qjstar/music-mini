@@ -1,0 +1,53 @@
+/* pages/singerDetail/singerDetail.wxss */
+.imgShow{
+    position: relative;
+    height: 600rpx;
+    width: 100%;
+}
+.imgShow image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.imgShow .txtbox{
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    padding: 20rpx 0 20rpx 10%;
+    background: rgba(197, 3, 3, 0.6);
+}
+.txtbox .name{
+    font-size: 50rpx;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10rpx;
+}
+.txtbox .txt{
+    font-size: 30rpx;
+    color: #f1f1f1;
+}
+
+.title{
+    display: block;
+    font-weight: 700;
+    line-height: 80rpx;
+    font-size: 40rpx;
+    color: #333;
+    margin-left: 30rpx;
+    margin-top: 30rpx;
+}
+.title::before{
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 40rpx;
+    background: #aa1212;
+    margin-right: 15rpx;
+}
+
+.content{
+    font-size: 26rpx;
+    padding: 10rpx 30rpx;
+    line-height: 1.5rem;
+}

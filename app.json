@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/musicList/musicList",
+    "pages/singerDetail/singerDetail",
+    "pages/songPlay/songPlay",
+    "pages/search/search"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#CC0033",
+    "navigationBarTitleText": "云嘉音乐",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "backgroundColor": "#eeeeee",
+    "color": "#999999",
+    "selectedColor": "#d43c33",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/assets/images/home.png",
+        "selectedIconPath": "/assets/images/home_active.png"
+      },
+      {
+        "pagePath": "pages/musicList/musicList",
+        "text": "音乐列表",
+        "iconPath": "/assets/images/music.png",
+        "selectedIconPath": "/assets/images/music_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
